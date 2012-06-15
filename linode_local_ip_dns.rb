@@ -35,7 +35,7 @@ def log msg
   end
 end
 
-if (defined? Rails and Rails.env.development?) or true
+if (defined? Rails and Rails.env.development?) || (!defined? Rails)
 
   require 'json'
   require 'open-uri'
